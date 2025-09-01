@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>h01</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Harjutus 04</h1>
+    <h2>4.6 Juubel</h2>
+    <form action="#" method="get">
+        Sünniaasta <input type="number" name="syniaasta" required value="2000"><br>
+        <input type="submit" value="Leia Juubel">
+    </form>
+ <?php
+    if(isset($_GET["syniaasta"])){
+        $vanus = 2025 - $_GET["syniaasta"];
+        if($vanus%5 == 0)
+            echo "Juubel";
+        } else {
+            echo "Ei ole juubel";
+        }
+    
+ ?>
+
+
+
+    <h1>Harjutus 04</h1>
+    <form action="#" method="get">
+        arv1 <input type="number" name="arv1" required><br>
+        arv2 <input type="number" name="arv2" required><br>
+        <input type="submit" value="jaga">
+    </form>    
+    <?php
+        if(isset($_GET["arv1"]) && isset($_GET["arv2"])){
+            $arv1 = $_GET["arv1"];
+            $arv2 = $_GET["arv2"];
+            if($arv==0){
+                echo "Nulliga ei saa jagada!";
+            } else {
+            echo $arv1 / $arv2;
+            }
+        }
+    ?>
+
+
+    <h1>Harjutus 03</h1>
+    <form action="#" method="get">
+        a <input type="number" name="a" required><br>
+        b <input type="number" name="b" required><br>
+        h <input type="number" name="h" required><br>
+        <input type="submit" value="arvuta">
+    </form>
+    <?php
+        $a = $_GET["a"];
+        $b = $_GET["b"];
+        $h = $_GET["h"];
+        $s = ($a + $b)/2*$h;
+        echo "Trapetsi pindala: ".$s."<br>";
+    ?>
+    <h1>Harjutus 02</h1>
+    <?php
+        $a1 = 7;
+        $a2 = 5;
+        // echo "$a1 + $a2 = $a1+$a2";
+        printf("%d + %d = %d <br>", $a1, $a2, $a1+$a2);
+        printf("%d - %d = %d <br>", $a1, $a2, $a1-$a2);
+        printf("%d * %d = %d <br>", $a1, $a2, $a1*$a2);
+        printf("%d / %d = %f0.2f <br>", $a1, $a2, $a1/$a2);
+        printf("%d jääk %d = %d <br>", $a1, $a2, $a1%$a2);
+
+
+    //täisnurkne kolmnurk
+    $a3 = 8;
+    $p = $a1+$a2+$a3;
+    $s = $a1 * $a2 / 2;
+    echo "Ümbermõõt: ".$p."<br>";
+    echo "Pindala: ".$p."<br>";
+    ?>
+
+    <h1>Harjutus 01</h1>
+    <?php
+    // Ojala 01.09.2025
+    // ülesanne 1
+
+    $nimi = "Rasmus";
+    $aasta = 2008;
+    $sodiac = "gemini";
+
+    echo $nimi.'<br>'.$aasta."<br>".$sodiac;
+    echo "<br>";
+    echo '"It\'s my life" - Dr Alban';
+    echo "<br>";
+    echo "(\(\ <br>";
+    echo "( -.-) <br>";
+    echo "o_(\")(\") <br>";
+
+    ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
