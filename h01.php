@@ -7,10 +7,71 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
+    <h1>Harjutus 06</h1>
+    <?php
+    for ($i=1; $i <= 100 ; $i++) {
+        if ($i%3==0)
+            echo "<br>"
+    }
+    ?>
+
+
+    <?php
+    for ($i=0; $i < ; $i--) {
+        echo $i."<br>";
+    }
+
+    ?>
+
+
+
+    <?php
+    for ($i=1; $i <= 10 ; $i++) {
+        echo "* ";
+        if ($i%10==0) {
+            echo "<br>";
+        }
+    }
+    ?>
+
+
+
+
+    <?php
+    for ($i=1; $i <= 10 ; $i++) {
+        echo "*<br>";
+    }
+
+        for ($i=1; $i <= 10 ; $i++) {
+        echo "*";
+    }
+
+    echo "<br>";
+    ?>
+
+
+
+
+    <?php
+    for ($i=1; $i <=100; $++) {
+        ecgi $i.". ";
+        if ($i==10) {
+            echo "<br>";
+        }
+    }
+    ?>
+
+
+
+
+
     <h1>Harjutus 05</h1>
     <h2>Hiina nimed</h2>
     <?php
-    
+    $nimed = array("瀚聪","月松","雨萌","展博","雪丽","哲恒","慧妍","博裕","宸瑜","奕漳",
+"思宏","伟菘","彦歆","睿杰","尹智","琪煜","惠茜","晓晴","志宸","博豪",
+"璟雯","崇杉","俊誉","军卿","辰华","娅楠","志宸","欣妍","明美")
+
     ?>
 
 
