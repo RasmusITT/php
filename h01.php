@@ -7,6 +7,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
+    <h1>Harjutus 09</h1>
+    <?php
+
+$nimi = "RaSMus"; 
+$korrektneNimi = ucfirst(strtolower($nimi));
+echo "Tere, $korrektneNimi!<br>";
+
+
+$tekst = "stalker";
+$punktidega = strtoupper(implode(".", str_split($tekst))) . ".";
+echo "$punktidega<br>";
+
+$sonum = "Sa oled täielik noob!";
+$ropud = ["noob", "idioot", "loll"];
+$sonumPuhas = str_ireplace($ropud, "***", $sonum);
+echo $sonumPuhas . "<br>";
+
+
+$eesnimi = "Ülle";
+$perenimi = "Doos";
+
+
+    "ä" => "a", "ö" => "o", "ü" => "y", "õ" => "o",
+    "Ä" => "a", "Ö" => "o", "Ü" => "y", "Õ" => "o"
+;
+$eesnimiClean = strtolower(strtr($eesnimi, $trans));
+$perenimiClean = strtolower(strtr($perenimi, $trans));
+
+$email = $eesnimiClean . "." . $perenimiClean . "@khk.ee";
+echo "Email: $email<br>";
+?>
+
+
+
+
+
+    <h1>Harjutus 08</h1>
+    <?php
+echo "Kuupaev ja kellaaeg: " . date("d.m.Y H:i") . "<br>";
+
+
+$synniaasta = 2005;
+$praeguneAasta = date("Y");
+$vanus = $praeguneAasta - $synniaasta;
+echo "Kasutaja saab sellel aastal: $vanus aastat vana.<br>";
+
+$kooliaastaLopp = strtotime("15.06.$praeguneAasta");
+$tana = time();
+$paevadeVahe = ceil(($kooliaastaLopp - $tana) / (60 * 60 * 24));
+
+if ($paevadeVahe > 0) {
+    echo "Kooliaasta lopuni on jaanud $paevadeVahe paeva.<br>";
+} else {
+    echo "Kooliaasta on labi<br>";
+}
+
+$kuu = date("n"); 
+
+if ($kuu >= 3 && $kuu <= 5) {
+    $aastaaeg = "kevad";
+    $pilt = "kevad.jpg";
+} elseif ($kuu >= 6 && $kuu <= 8) {
+    $aastaaeg = "suvi";
+    $pilt = "suvi.jpg";
+} elseif ($kuu >= 9 && $kuu <= 11) {
+    $aastaaeg = "sügis";
+    $pilt = "sugis.jpg";
+} else {
+    $aastaaeg = "talv";
+    $pilt = "talv.jpg";
+}
+
+echo "Praegu on $aastaaeg.<br>";
+echo "<img src='$pilt' alt='$aastaaeg' width='200'>";
+?>
+
+
     <h1>Harjutus 07</h1>
     <?php
     function tervita(){
