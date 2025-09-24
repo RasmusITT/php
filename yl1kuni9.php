@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Harjutus 09</h1>
+    <h1>Ylesanne 09</h1>
     <?php
 
 $nimi = "RaSMus"; 
@@ -43,7 +43,7 @@ echo "Email: $email<br>";
 
 
 
-    <h1>Harjutus 08</h1>
+    <h1>Ylesanne 08</h1>
     <?php
 echo "Kuupaev ja kellaaeg: " . date("d.m.Y H:i") . "<br>";
 
@@ -84,7 +84,7 @@ echo "<img src='$pilt' alt='$aastaaeg' width='200'>";
 ?>
 
 
-    <h1>Harjutus 07</h1>
+    <h1>Ylesanne 07</h1>
     <?php
     function tervita(){
         echo "Tere paikesekesekene";
@@ -177,7 +177,7 @@ echo "Pindala ".rectangleS(10,30);
 echo "<br>";
 ?>
 
-    <h1>Harjutus 06</h1>
+    <h1>Ylesanne 06</h1>
     <?php
     $poiss = array("markus","robin","kert")
     $tydruk = array("liisu","liisi","merlin")
@@ -258,7 +258,7 @@ for ($i=0; $i < count($tydruk); $i++) {
 
 
 
-    <h1>Harjutus 05</h1>
+    <h1>Ylesanne 05</h1>
     <h2>Hiina nimed</h2>
     <?php
     $nimed = array("瀚聪","月松","雨萌","展博","雪丽","哲恒","慧妍","博裕","宸瑜","奕漳",
@@ -274,7 +274,7 @@ for ($i=0; $i < count($tydruk); $i++) {
 
 
 
-    <h1>Harjutus 05</h1>
+    <h1>Ylesanne 05</h1>
     <h2>Google</h2>
     <div class="content">
         <div class="row">
@@ -313,7 +313,7 @@ if(isset($_GET["otsi"])){
 
 
 
-    <h1>Harjutus 05</h1>
+    <h1>Ylesanne 05</h1>
     <h2>Riigid</h2>
     <?php
     $Riigid = array("Indonesia","Canada","Kyrgyzstan","Germany","Philippines",
@@ -328,7 +328,7 @@ if(isset($_GET["otsi"])){
 
 
 
-    <h1>Harjutus 05</h1>
+    <h1>Ylesanne 05</h1>
     <h2>Firmad</h2>
     <form action="#">
         Eemalda firma: <input type="text" name="eemalda">
@@ -351,7 +351,7 @@ if(isset($_GET["otsi"])){
 
 
 
-    <h1>Harjutus 05</h1>
+    <h1>Ylesanne 05</h1>
     <h2>Keskmised palgad</h2>
     <?php
     $palgad = array(1220,1213,1295,1312,1298,1354,1296,1286,1292,1327,1369,1455)
@@ -361,7 +361,7 @@ if(isset($_GET["otsi"])){
     ?>
 
 
-    <h1>Harjutus 05</h1>
+    <h1>Ylesanne 05</h1>
     <h2>Autod</h2>
     <?php
 $cars = array("Subaru","BMW","Acura","Mercedes-Benz","Lexus","GMC","Volvo","Toyota","Volkswagen","Volkswagen","GMC","Jeep","Saab","Hyundai","Subaru","Mercedes-Benz",
@@ -419,7 +419,7 @@ $vins = array(
     }
 
     ?>
-    <h1>Harjutus 05</h1>
+    <h1>Ylesanne 05</h1>
     <h2>Tudrukud</h2>
 
     <?php
@@ -439,7 +439,7 @@ $vins = array(
     ?>
 
 
-    <h1>Harjutus 04</h1>
+    <h1>Ylesanne 04</h1>
     <h2>4.7 Hinne</h2>
     <form action="#" method="get">
         Punktid <input type="number" name="punktid" required value="10" min="1" max="10"><br>
@@ -460,7 +460,7 @@ $vins = array(
         }
     ?>
 
-    <h1>Harjutus 04</h1>
+    <h1>Ylesanne 04</h1>
     <h2>4.6 Juubel</h2>
     <form action="#" method="get">
         Sünniaasta <input type="number" name="syniaasta" required value="2000"><br>
@@ -479,7 +479,7 @@ $vins = array(
 
 
 
-    <h1>Harjutus 04</h1>
+    <h1>Ylesanne 04</h1>
     <form action="#" method="get">
         arv1 <input type="number" name="arv1" required><br>
         arv2 <input type="number" name="arv2" required><br>
@@ -498,7 +498,7 @@ $vins = array(
     ?>
 
 
-    <h1>Harjutus 03</h1>
+    <h1>Ylesanne 03</h1>
     <form action="#" method="get">
         a <input type="number" name="a" required><br>
         b <input type="number" name="b" required><br>
@@ -512,7 +512,7 @@ $vins = array(
         $s = ($a + $b)/2*$h;
         echo "Trapetsi pindala: ".$s."<br>";
     ?>
-    <h1>Harjutus 02</h1>
+    <h1>Ylesanne 02</h1>
     <?php
         $a1 = 7;
         $a2 = 5;
@@ -532,7 +532,7 @@ $vins = array(
     echo "Pindala: ".$p."<br>";
     ?>
 
-    <h1>Harjutus 01</h1>
+    <h1>Ylesanne 01</h1>
     <?php
     // Ojala 01.09.2025
     // ülesanne 1
@@ -553,4 +553,5 @@ $vins = array(
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
+
 </html>
